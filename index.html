@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="./styles/main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,52 +17,63 @@
       <h1 class="logo">MyPortfolio</h1>
       <ul class="nav-links">
         <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#projects">My Projects</a></li>
+        <li><a href="#contact">Contact with me</a></li>
       </ul>
-      <button id="mode-toggle">🌙</button>
+      <!-- دارك لايت بسوي هنا زر-->
     </nav>
   </header>
 
-  <!-- ===== About Me ===== -->
   <section id="about">
     <h2>About Me</h2>
-    <div class="about-container">
-      <img src="images/profile.jpg" alt="Profile picture">
+    <div class="about-card">
+      <img src="images/myLOGO.png" alt="Profile picture" class ="about-img">
       <p>
-        Hello! I'm [Your Name], a web developer passionate about building 
-        beautiful and functional websites. My goal is to keep learning and 
-        create projects that make an impact.
+        Hello! I'm <strong>Taif Ahmad Asiri</strong> , holding a Bechelor's degree in Information System in Cybersecurity track from King Khalid University , graduated with 2nd class honors
+        I worked for six weeks in the Education Department in the IT department which gave me an insight into the work environment and meeting customer demands.
+
       </p>
     </div>
   </section>
 
-  <!-- ===== Projects ===== -->
+  <!-- Projects -->
   <section id="projects">
     <h2>Projects</h2>
     <div class="projects-container">
       <div class="project-card">
-        <h3>Project 1</h3>
-        <p>A short description of this project.</p>
+        <img src="images/درء-removebg.jpg" alt="Project Logo" class="project-logo">
+        <h3><strong> "Daraa AI"</strong></h3>
+        <p>A proactive security system to protect banking systems</p>
+         <p class="more-text hidden">
+      It is an intelligent system that combines the roles of an attacker and observer simultaneously, operating within the bank's environment, analysing transactions and identifying vulnerabilities, and generating security reports that classify the level of risk.
+      </p>
+      <button class="read-more-btn">Read about project 1</button>
+    </div>
       </div>
+      <p> 
+       
+      </p>
       <div class="project-card">
-        <h3>Project 2</h3>
-        <p>A short description of this project.</p>
+        <img src="images/logo.png" alt="Project Logo" class="project-logo">
+        <h3>Project 2       <strong> "Classification game"</strong></h3>
+        <p>Picture Classification Game for Autisic Children</p>
+         <p class="more-text hidden">
+      Classifcation Game was my graduation project , It is an interactive game designed for children with autism, supervised by parents and specialised professionals (doctors and teachers) who monitor the child's progress and record feedback. This project was developed using HTML, CSS, and JavaScript.
+      </p>
+      <button class="read-more-btn">Read about project 2</button>
+    </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Contact ===== -->
+
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
-    <p>GitHub: <a href="#">github.com/yourname</a></p>
-  </section>
+   
 
   <!-- ===== Footer ===== -->
   <footer>
-    <p>© 2025 MyPortfolio | Built with ❤️</p>
+    <p></p>
   </footer>
 
   <script src="./scripts/app.js"></script>

@@ -1,26 +1,27 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* General */
+
 body {
-  font-family: Arial, sans-serif;
+
   line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
+  background: #39273F;
+  color: #fdf0df;
+font-family: 'Epunda Slab', serif;
 }
 
-/* Navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background: #222;
-  color: #fff;
+  color: #f5ecec;
 }
 
 .nav-links {
@@ -47,11 +48,11 @@ section {
 
 h2 {
   margin-bottom: 1rem;
-  color: #444;
+  color: #ffffff;
 }
 
 /* About */
-.about-container {
+/* .about-container {
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -59,45 +60,52 @@ h2 {
 .about-container img {
   width: 150px;
   border-radius: 50%;
+} */
+ .about-card {
+  max-width: 600px;        
+  margin: 2rem auto;         
+  padding: 2rem;
+  background: #724848;      
+  border-radius: 15px;      
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+  /* text-align: center;    */
+}
+.about-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; 
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #ff9800; 
 }
 
 /* Projects */
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  gap: 10px;
 }
 .project-card {
-  padding: 1rem;
+ min-height: 400px; 
+  max-width: 700px;
+    /* padding: rem; */
   border: 1px solid #ddd;
   border-radius: 8px;
-  background: #fff;
+  background: #7248487a;
   transition: transform 0.3s;
-}
-.project-card:hover {
-  transform: scale(1.05);
+  flex-direction: column;
+  margin: 30px;
+  text-align: center; 
+  font-size: 1.5rem;
+  box-shadow: 0 10px 12px rgba(0,0,0,0.1); 
+  
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #222;
-  color: #fff;
-  margin-top: 2rem;
-}
-body.dark {
-  background: #222;
-  color: #eee;
-}
-body.dark .navbar,
-body.dark footer {
-  background: #111;
-}
-  body.dark .project-card {
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background: #000000;
-  transition: transform 0.3s;
+.project-logo {
+  width: 200px;  
+  height: 200px;
+  /* border-radius: 80%; */
+  object-fit: contain;  
+  display: block;
+  margin: 0 auto 4rem; 
 }
