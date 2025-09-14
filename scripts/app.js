@@ -1,4 +1,4 @@
- const toggleBtn = document.getElementById("mode-toggle");
+const toggleBtn = document.getElementById("mode-toggle");
 const body = document.body;
 
 toggleBtn.addEventListener("click", () => {
@@ -21,8 +21,8 @@ buttons.forEach((btn) => {
     }
   });
 });
- // Toggle Dark Mode - MDN  Web Docs -Add Event Listner
- // Read More Button - MDN  Web Docs  - Document querySelectorAll
- 
+// Toggle Dark Mode - MDN  Web Docs -Add Event Listner
+// Read More Button - MDN  Web Docs  - Document querySelectorAll
+
 
 

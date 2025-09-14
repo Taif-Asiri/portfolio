@@ -1,9 +1,9 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 /* CSS tricks - Box-sizing */
 html {
   scroll-behavior: smooth;
@@ -13,7 +13,7 @@ body {
   line-height: 1.5;
   background: #39273F;
   color: #e5dffd;
-font-family: 'Epunda Slab', serif;
+  font-family: 'Epunda Slab', serif;
 }
 
 
@@ -36,9 +36,11 @@ font-family: 'Epunda Slab', serif;
   text-decoration: none;
   transition: color 0.3s;
 }
+
 .nav-links a:hover {
   color: #4a7385;
 }
+
 /* MDN Web Docs -- CSS transictions */
 section {
   padding: 4rem 2rem;
@@ -50,40 +52,43 @@ h2 {
   margin-bottom: 1.5rem;
   color: #ffffff;
 }
- .about-card {
-  max-width: 600px;            
+
+.about-card {
+  max-width: 600px;
   padding: 2rem;
-  background: #724848; 
- border: 1px solid #ddd;
-  border-radius: 8px;     
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+  background: #724848;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 .about-img {
   width: 120px;
   height: 120px;
-  border-radius: 50%; 
+  border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
-  border: 3px solid #ff9800; 
+  border: 3px solid #ff9800;
 }
 
 
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
- 
+
 }
 
 .project-logo {
   max-width: 60%;
   height: auto;
-  object-fit: contain;  
+  object-fit: contain;
   display: block;
-  margin: 0 auto 4rem; 
+  margin: 0 auto 4rem;
 }
+
 .project-card {
   display: flex;
-max-width: 90%;
+  max-width: 90%;
   height: auto;
   border: 1px solid #ffffff;
   border-radius: 8px;
@@ -91,23 +96,26 @@ max-width: 90%;
   transition: transform 0.3s;
   flex-direction: column;
   margin: 30px;
-  text-align: center; 
+  text-align: center;
   font-size: 1rem;
-  box-shadow: 0 10px 12px rgba(0,0,0,0.1); 
-  
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
+
 }
+
 .project-card:hover {
   transform: scale(1.05);
-  }
+}
 
 .more-text {
   margin-top: 0.5rem;
 }
+
 .hidden {
   display: none;
 }
+
 .read-more-btn {
- width: auto;
+  width: auto;
   margin-top: 0.5rem;
   padding: 0.4rem 0.8rem;
   border: none;
@@ -116,21 +124,23 @@ max-width: 90%;
   color: #fff;
   cursor: pointer;
 }
+
 .read-more-btn:hover {
   background: #e68900;
 }
 
-.contact-card , .contact-form {
+.contact-card,
+.contact-form {
   display: flex;
   flex-direction: row;
-  gap: 2rem; 
+  gap: 2rem;
   max-width: 400px;
   text-align: left;
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
   background: #07255d;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -141,18 +151,22 @@ footer {
   color: #fff;
   margin-top: 2rem;
 }
+
 body.dark {
   background: #222;
   color: #eee;
 }
+
 body.dark .navbar,
 body.dark footer {
   background: #11111153;
 }
-  body.dark .project-card {
+
+body.dark .project-card {
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 8px;
   background: #1f0d0d;
 }
+
 /* MDN Web Docs - using media queries/ class toggling for dark themes */
