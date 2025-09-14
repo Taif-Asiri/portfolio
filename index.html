@@ -2,27 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+    <!-- to be responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="./styles/main.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link src="https://fonts.google.com/specimen/Epunda+Slab?preview.text=hi" >
 </head>
 <body>
 
-  <!-- ===== Header & Navigation ===== -->
+
   <header>
     <nav class="navbar">
-      <h1 class="logo">MyPortfolio</h1>
+      <h1 class="logo">My Portfolio</h1>
       <ul class="nav-links">
         <li><a href="#about">About Me</a></li>
         <li><a href="#projects">My Projects</a></li>
         <li><a href="#contact">Contact with me</a></li>
       </ul>
-      <!-- دارك لايت بسوي هنا زر-->
+      <!-- intro to html homework -->
+      <button id="mode-toggle">Dark mode🌙</button>
     </nav>
   </header>
+
 
   <section id="about">
     <h2>About Me</h2>
@@ -36,17 +37,19 @@
     </div>
   </section>
 
-  <!-- Projects -->
+  
   <section id="projects">
-    <h2>Projects</h2>
+    <h2><strong></strong><em>My projects</em></strong></h2>
+    
     <div class="projects-container">
       <div class="project-card">
-        <img src="images/درء-removebg.jpg" alt="Project Logo" class="project-logo">
-        <h3><strong> "Daraa AI"</strong></h3>
-        <p>A proactive security system to protect banking systems</p>
+        <img src="images/درء-removebg-preview.png" alt="Project Logo" class="project-logo">
+        <h3><strong> <em>"Daraa AI"</em></strong></h3>
+        <p><em>A proactive security system to protect banking systems</em></p>
          <p class="more-text hidden">
       It is an intelligent system that combines the roles of an attacker and observer simultaneously, operating within the bank's environment, analysing transactions and identifying vulnerabilities, and generating security reports that classify the level of risk.
-      </p>
+       <iframe src="" alt="Project document" width="80%" height="400px"></iframe>
+    </p>
       <button class="read-more-btn">Read about project 1</button>
     </div>
       </div>
@@ -55,25 +58,60 @@
       </p>
       <div class="project-card">
         <img src="images/logo.png" alt="Project Logo" class="project-logo">
-        <h3>Project 2       <strong> "Classification game"</strong></h3>
-        <p>Picture Classification Game for Autisic Children</p>
+        <h3> <strong> <em>"Classification game"</em></strong></h3>
+        <p><em>Picture Classification Game for Autisic Children</em></p>
          <p class="more-text hidden">
-      Classifcation Game was my graduation project , It is an interactive game designed for children with autism, supervised by parents and specialised professionals (doctors and teachers) who monitor the child's progress and record feedback. This project was developed using HTML, CSS, and JavaScript.
-      </p>
+     Classifcation Game was my graduation project , It is an interactive game designed for children with autism, supervised by parents and specialised professionals (doctors and teachers) who monitor the child's progress and record feedback. This project was developed using HTML, CSS, and JavaScript.
+      <iframe src="" alt="Project document" width="80%" height="400px"></iframe>
+    </p>
       <button class="read-more-btn">Read about project 2</button>
     </div>
       </div>
     </div>
   </section>
 
-
   <section id="contact">
     <h2>Contact</h2>
-   
+     <div class="contact-container">
+      <div class="contact-card">
+ 
+      <nav>
+        <span> <a href="mailto:toti4438@gmail.com" style="color: white;" target="_blank">Email</a> </span>
 
-  <!-- ===== Footer ===== -->
+        <span> <a href="https://github.com/" style="color: white;"target="_blank">GitHub</a></span>
+
+         <span> <a href="https://www.linkedin.com/in/taif-is?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"style="color: white;"target="_blank">Linked in</a> </span>
+    </nav> 
+      </div>
+      </div>
+
+   <p>
+  
+    
+      <p>Or contact me through the <strong>form</strong> below ⬇️
+        <div class="contact-form">
+        <p><form action="https://getform.io/f/bqoeqxqb" method="POST">
+     <form action="https://getform.io/f/your-form-endpoint" method="POST" class="contact-card">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+<p>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+<p>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+    <!-- getform.io -->
+    </div>
+  </div>
+</section>
+</form></p>
+  </section>
+
   <footer>
-    <p></p>
+    <p>Taif Ahmad Asiri © 2025 </p>
   </footer>
 
   <script src="./scripts/app.js"></script>
