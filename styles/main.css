@@ -11,8 +11,9 @@ html {
 
 body {
   line-height: 1.5;
-  background: #39273F;
-  color: #e5dffd;
+  background-color: #ede4c9;
+  background-size: cover;
+  color: #3b335a;
   font-family: 'Epunda Slab', serif;
 }
 
@@ -22,7 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #a79761;
+  background: #6199a767;
   color: #000000;
 }
 
@@ -50,16 +51,16 @@ section {
 
 h2 {
   margin-bottom: 1.5rem;
-  color: #ffffff;
+  color: #6097ce;
 }
 
 .about-card {
-  max-width: 600px;
+  max-width: 1000px;
   padding: 2rem;
-  background: #724848;
-  border: 1px solid #ddd;
+  background: #72484800;
+  border: 1px solid #7889a5;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgb(90, 90, 148);
 }
 
 .about-img {
@@ -90,15 +91,15 @@ h2 {
   display: flex;
   max-width: 90%;
   height: auto;
-  border: 1px solid #ffffff;
+  border: 1px solid #0c0909;
   border-radius: 8px;
-  background: #7248487a;
+  background: #f7e2b67a;
   transition: transform 0.3s;
   flex-direction: column;
   margin: 30px;
   text-align: center;
   font-size: 1rem;
-  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgb(90, 90, 148);
 
 }
 
@@ -120,7 +121,7 @@ h2 {
   padding: 0.4rem 0.8rem;
   border: none;
   border-radius: 5vh;
-  background: #ff9800;
+  background: #3d608d;
   color: #fff;
   cursor: pointer;
 }
@@ -128,6 +129,53 @@ h2 {
 .read-more-btn:hover {
   background: #e68900;
 }
+#skills-random {
+  padding: 4rem 2rem;
+  position: relative;
+  height: 500px; 
+  background: #39273f00;
+  overflow: visible;
+
+}
+
+.skills-random-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #204d71;
+  box-shadow: 0 4px 12px rgb(62, 88, 122);
+  border-radius: 8px; 
+}
+
+.skill-item {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+
+}
+
+.skill-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.2rem;
+}
+
+.skill-item p {
+  color: #39496b;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.skill-item:hover {
+  transform: scale(1.3);
+  color: #ff990082; 
+}
+
+
 
 .contact-card,
 .contact-form {
@@ -137,10 +185,10 @@ h2 {
   max-width: 400px;
   text-align: left;
   padding: 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid #ffe1e1;
   border-radius: 8px;
-  background: #07255d;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: #d6c8c805;
+  box-shadow: 0 4px 10px rgb(48, 74, 103);
 }
 
 
@@ -148,25 +196,25 @@ footer {
   text-align: center;
   padding: 1rem;
   background: #22222227;
-  color: #fff;
+  color: #290041;
   margin-top: 2rem;
 }
 
 body.dark {
-  background: #222;
+  background: #000524;
   color: #eee;
 }
 
 body.dark .navbar,
 body.dark footer {
-  background: #11111153;
+  background: #151b46b7;
 }
 
 body.dark .project-card {
   padding: 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid #28353e;
   border-radius: 8px;
-  background: #1f0d0d;
+  background: #2e495b;
 }
 
 /* MDN Web Docs - using media queries/ class toggling for dark themes */
