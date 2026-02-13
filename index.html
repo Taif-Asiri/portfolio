@@ -10,45 +10,89 @@
   <link rel="stylesheet" href="./images/">
 
   <link src="https://fonts.google.com/specimen/Epunda+Slab?preview.text=hi">
+  
 </head>
 
 <body>
 
-
+<canvas id="stars"></canvas>
   <header>
     <nav class="navbar">
       <h1 class="logo">My Portfolio</h1>
       <ul class="nav-links">
         <li><a href="#about">About Me</a></li>
+        <li><a href="#roles">My Roles</a></li>
         <li><a href="#projects">My Projects</a></li>
         <li><a href="#contact">Contact with me</a></li>
       </ul>
       <!-- intro to html homework -->
-      <button id="mode-toggle">Dark mode🌙</button>
+      <button id="mode-toggle">🌙</button>
+    
     </nav>
   </header>
 
-
+<section class="about reveal"></section>
   <section id="about">
-    <h2>About Me</h2>
-    <div class="about-card">
+    <div class="about-card reveal">
       <img src="./images/myLOGO.png" alt="Profile picture" class="about-img">
-      <p>
-        Hello! I'm <strong>Taif Ahmad Asiri</strong> , holding a Bechelor's degree in Information System in
-        Cybersecurity track from King Khalid University , graduated with 2nd class honors
-        I worked for six weeks in the Education Department in the IT department which gave me an insight into the work
-        environment and meeting customer demands.
+       <!-- Hello! I'm <strong>Taif Ahmad Asiri</strong>
+      <p> -->
+        <strong>Taif Asiri</strong>
+        <p>
 
       </p>
     </div>
   </section>
 
+<section id="roles" class="reveal">
+  <h2>My Roles</h2>
+  <div class="roles-container reveal">
+    <div class="role-card reveal">
+      <h3>Frontend Developer</h3>
+      <p>Building interactive user interfaces using React, HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="role-card reveal">
+      <h3>Backend Developer</h3>
+      <p>Designing REST APIs and managing databases with Django and PostgreSQL.</p>
+    </div>
+
+    <div class="role-card reveal">
+      <h3>Data Analyst</h3>
+      <p>Analyzing data to generate actionable insights using Power BI and Python.</p>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="Bio reveal"></section>
+  <section id="Bio">
+    <div class="Bio reveal">
+        <strong>holding a Bechelor's degree in Information System in
+        Cybersecurity track from King Khalid University , graduated with 2nd class honors
+        I worked for six weeks in the Education Department in the IT department which gave me an insight into the work
+        environment and meeting customer demands</strong>
+        <p>
+
+      </p>
+    </div>
+  </section> -->
+
 
   <section id="projects">
     <h2><strong></strong><em>My projects</em></strong></h2>
-
-    <div class="projects-container">
-      <div class="project-card">
+    </p>
+    <div class="project-card reveal">
+      <img src="./images/SalesDashboard.png" alt="Project Logo" class="project-logo">
+      <h3> <strong> <em>"Sales Dashboard"</em></strong></h3>
+      <p><em>Built an interactive sales dashboard using Power BI.</em></p>
+      <p class="more-text hidden">
+         Utilized Power Query for data cleaning and transformation, created conditional columns, and developed DAX measures for key metrics. Designed visualizations with slicers to analyze sales by country, city, category, and month
+        <!-- <iframe src="" alt="Project document" width="80%" height="400px"></iframe> -->
+      </p>
+      <button class="read-more-btn">Read More</button>
+    </div>
+    <div class="projects-container reveal">
+      <div class="project-card reveal">
         <img src="./images/درء-removebg-preview.png" alt="Project Logo" class="project-logo">
         <h3><strong> <em>"Daraa AI"</em></strong></h3>
         <p><em>A proactive security system to protect banking systems</em></p>
@@ -56,16 +100,16 @@
           It is an intelligent system that combines the roles of an attacker and observer simultaneously, operating
           within the bank's environment, analysing transactions and identifying vulnerabilities, and generating security
           reports that classify the level of risk.
-          <iframe src="" alt="Project document" width="80%" height="400px"></iframe>
+          <!-- <iframe src="" alt="Project document" width="80%" height="400px"></iframe> -->
           <!--that will display the project document for later addition -->
         </p>
-        <button class="read-more-btn">Read about project 1</button>
+        <button class="read-more-btn">Read more</button>
       </div>
     </div>
     <p>
 
     </p>
-    <div class="project-card">
+    <div class="project-card reveal">
       <img src="./images/logo.png" alt="Project Logo" class="project-logo">
       <h3> <strong> <em>"Classification game"</em></strong></h3>
       <p><em>Picture Classification Game for Autisic Children</em></p>
@@ -73,15 +117,16 @@
         Classifcation Game was my graduation project , It is an interactive game designed for children with autism,
         supervised by parents and specialised professionals (doctors and teachers) who monitor the child's progress and
         record feedback. This project was developed using HTML, CSS, and JavaScript.
-        <iframe src="" alt="Project document" width="80%" height="400px"></iframe>
+        <!-- <iframe src="" alt="Project document" width="80%" height="400px"></iframe> -->
       </p>
-      <button class="read-more-btn">Read about project 2</button>
+      <button class="read-more-btn">Read more</button>
     </div>
+
   </section>
 <div>
 <section id="skills-random">
   <h2>Skills</h2>
-  <div class="skills-random-container">
+  <div class="skills-random-container reveal">
     </div>
   </div>
 
@@ -89,11 +134,11 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <div class="contact-container">
+    <div class="contact-container reveal">
       <div class="contact-card">
 
         <nav>
-          <span> <a href="mailto:toti4438@gmail.com" style="color: rgb(0, 26, 88);" target="_blank">Email</a> </span>
+          <span> <a href="mailto:toti4438@gmail.com" style="color: rgb(157, 176, 223);" target="_blank">Email</a> </span>
 
           <span> <a href="https://github.com/Taif-Asiri
 " style="color: rgb(222, 157, 28);" target="_blank">GitHub</a></span>
@@ -109,7 +154,7 @@
       <div>
 
     <p>Or contact me through the <strong>form</strong> below ⬇️
-    <div class="contact-form">
+    <div class="contact-form reveal">
       <p>
       <form action="https://getform.io/f/bqoeqxqb" method="POST">
         <form action="https://getform.io/f/your-form-endpoint" method="POST" class="contact-card">
@@ -134,10 +179,11 @@
   </section>
 
   <footer>
-    <p>Taif Ahmad Asiri © 2025 </p>
+    <p>Taif Asiri © 2026 </p>
   </footer>
 
   <script src="./scripts/app.js"></script>
+
 </body>
 
 </html>

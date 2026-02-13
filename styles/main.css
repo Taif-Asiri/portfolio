@@ -8,23 +8,43 @@
 html {
   scroll-behavior: smooth;
 }
+.reveal {
+  opacity: 0;               /* غير ظاهر */
+  transform: translateY(50px); /* يتحرك شوية من تحت */
+  transition: all 2s ease;  /* مدة ظهور العنصر */
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0); /* يرجع لمكانه الطبيعي */
+}
 
 body {
-  line-height: 1.5;
-  background-color: #ede4c9;
-  background-size: cover;
-  color: #3b335a;
-  font-family: 'Epunda Slab', serif;
+  margin: 0;
+  background: #021129;
+  /* overflow: hidden; */
+  color:rgb(240, 245, 206)
+}
+
+#stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
 }
 
 
 
 .navbar {
+  margin-top: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #6199a767;
-  color: #000000;
+  background: #151b4600;
+  color: #ffd4fe;
+  font-size: large;
 }
 
 .nav-links {
@@ -33,7 +53,7 @@ body {
 }
 
 .nav-links a {
-  color: #412658;
+  color: #5b4a6b;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -51,16 +71,26 @@ section {
 
 h2 {
   margin-bottom: 1.5rem;
-  color: #6097ce;
+  color: #b792be;
 }
 
 .about-card {
-  max-width: 1000px;
-  padding: 2rem;
-  background: #72484800;
+  /* max-width: 1000px; */
+  /* padding: 2rem;
+  background: #72484800; */
   border: 1px solid #7889a5;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgb(90, 90, 148);
+  box-shadow: 0 4px 12px rgb(90, 127, 148);
+  /* position: absolute;     */
+  margin-top: 80px;
+  margin-bottom: 10px;      
+ 
+  font-size: 6rem;        
+  color: #ce9bed;         
+  font-weight: bold;      
+  text-shadow: 0 0 20px #26557c, 0 0 40px #d4e8e8; 
+  z-index: 1;            
+  text-align: center;
 }
 
 .about-img {
@@ -71,8 +101,40 @@ h2 {
   margin-bottom: 1rem;
   border: 3px solid #ff9800;
 }
+.roles-container {
+  display: flex;             /* تصطف Cards بجانب بعض */
+  gap: 1.5rem;               /* المسافة بين الـ Cards */
+  justify-content: center;    /* توسيط */
+  flex-wrap: wrap;            /* يلتف للصف التالي لو الشاشة صغيرة */
+  margin-top: 2rem;
+}
+
+.role-card {
+  flex: 0 1 400px;           /* حجم ثابت تقريبا لكل Card */
+  padding: 1rem;
+  border-radius: 8px;
+  background: #2e495b5f;
+  color: #ebd3ef;
+  border: 1px, solid #abd4f5;
+  border-radius: 8px ;
+  box-shadow: 0 4px 12px rgba(249, 249, 249, 0.454);
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
 
 
+/* عند الضغط على Card */
+.role-card:active {
+  transform: scale(1.2);     /* تكبير */
+  z-index: 10;               /* لتكون فوق العناصر الأخرى أثناء التكبير */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.Bio{
+  text-align: center;
+  font-size: large;
+}
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -91,15 +153,19 @@ h2 {
   display: flex;
   max-width: 90%;
   height: auto;
-  border: 1px solid #0c0909;
-  border-radius: 8px;
-  background: #f7e2b67a;
+  /* border: 1px solid #0c0909; */
+  /* border-radius: 8px; */
+  /* background: #f7e2b67a; */
   transition: transform 0.3s;
   flex-direction: column;
   margin: 30px;
   text-align: center;
   font-size: 1rem;
   box-shadow: 0 4px 12px rgb(90, 90, 148);
+  padding: 1rem;
+  border: 1px solid #28353e;
+  border-radius: 8px;
+  background: #2e495b67;
 
 }
 
@@ -127,7 +193,7 @@ h2 {
 }
 
 .read-more-btn:hover {
-  background: #e68900;
+  background: #f1b9ed;
 }
 #skills-random {
   padding: 4rem 2rem;
@@ -187,7 +253,7 @@ h2 {
   padding: 1rem;
   border: 1px solid #ffe1e1;
   border-radius: 8px;
-  background: #d6c8c805;
+  background: #b6cff500;
   box-shadow: 0 4px 10px rgb(48, 74, 103);
 }
 
@@ -196,25 +262,25 @@ footer {
   text-align: center;
   padding: 1rem;
   background: #22222227;
-  color: #290041;
+  color: #8e739e;
   margin-top: 2rem;
 }
-
-body.dark {
-  background: #000524;
-  color: #eee;
+/* Light Mode */
+body.light {
+  background: #c8edf6;
+  color: #1e2258;
 }
 
-body.dark .navbar,
-body.dark footer {
+body.light .navbar,
+body.light footer {
   background: #151b46b7;
 }
 
-body.dark .project-card {
+body.light .project-card {
   padding: 1rem;
-  border: 1px solid #28353e;
+  border: 1px solid #fbddfe;
   border-radius: 8px;
-  background: #2e495b;
+  background: #f9d4f134;
 }
 
 /* MDN Web Docs - using media queries/ class toggling for dark themes */
