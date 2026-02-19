@@ -273,7 +273,8 @@ body.light {
 
 body.light .navbar,
 body.light footer {
-  background: #151b46b7;
+  /* background: #151b46b7; */
+  color:#204d71
 }
 
 body.light .project-card {
